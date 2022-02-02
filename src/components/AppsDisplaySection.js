@@ -18,9 +18,9 @@ const AppsDisplaySection = () => {
         return info.map((item) => {
             return (
                 <div className="app-item">
-                    <img src={item.img} />
+                    <img src={item.img} alt="apps-img" />
                     <p>{item.text}</p>
-                    <i class="arrow right icon" />
+                    <i className="arrow right icon" />
                 </div>
             )
         })

@@ -75,13 +75,17 @@
                 position: absolute;
                 top: 100%;
                 width: 100%;
+                height: 100vh;
                 left: 0;
                 padding-left: 20px;
+                background: #fff;
+                cursor: auto;
                 li {
                     color: black;
                     margin-top: 15px;
                     font-size: 14px;
                     font-weight: 700;
+                    cursor: pointer;
                 }
             }
         }

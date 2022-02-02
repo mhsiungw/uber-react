@@ -8,7 +8,7 @@ const SafetyItem = (props) => {
         return info.map((item) => {
             return (
                 <div key={item.title} className="item">
-                    <img src={item.img} />
+                    <img alt="item.title" src={item.img} />
                     <p className="title">{item.title}</p>
                     <p className="content">{item.content}</p>
                     <div className="links">

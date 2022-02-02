@@ -7,11 +7,11 @@ const SignUpSection = () => {
         <div className="sign-up-section">
             <div className="item">
                 <h2>Sign up to drive</h2>
-                <i class="arrow right icon" />
+                <i className="arrow right icon" />
             </div>
             <div className="item">
                 <h2>Sign up to drive</h2>
-                <i class="arrow right icon" />
+                <i className="arrow right icon" />
             </div>
         </div>
     )

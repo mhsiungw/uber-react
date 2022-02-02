@@ -8,11 +8,11 @@ const FooterBottom = () => {
         <div className="footer-bottom">
             <div className="first-line">
                 <div className="social-media-links">
-                    <i class="facebook icon" />
-                    <i class="twitter icon" />
-                    <i class="youtube icon" />
-                    <i class="linkedin icon" />
-                    <i class="instagram icon" />
+                    <i className="facebook icon" />
+                    <i className="twitter icon" />
+                    <i className="youtube icon" />
+                    <i className="linkedin icon" />
+                    <i className="instagram icon" />
                 </div>
                 <div className="website-info-button">
                     <button>
@@ -20,13 +20,13 @@ const FooterBottom = () => {
                         English
                     </button>
                     <button>
-                        <i class="map marker alternate icon" />
+                        <i className="map marker alternate icon" />
                         Taipei
                     </button>
                 </div>
                 <div className="apps-download-links">
-                    <img src={`${imgBaseUrl}app-store-google-4d63c31a3e.svg`} />
-                    <img src={`${imgBaseUrl}app-store-apple-f1f919205b.svg`} />
+                    <img alt="apps-img" src={`${imgBaseUrl}app-store-google-4d63c31a3e.svg`} />
+                    <img alt="apps-img" src={`${imgBaseUrl}app-store-apple-f1f919205b.svg`} />
                 </div>
             </div>
             <div className="second-line">

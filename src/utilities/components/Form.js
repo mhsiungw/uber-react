@@ -8,7 +8,7 @@ const Form = () => {
             <div className="pick-up">
                 <label htmlFor="pick-up-input" />
                 <input id="pick-up-input" placeholder="Enter pickup location" />
-                <i class="location arrow icon"></i>
+                <i className="location arrow icon"></i>
             </div>
             <div className="destination">
                 <label htmlFor="destination" />
