@@ -1,0 +1,54 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    .pick-up,
+    .destination {
+        width: 100%;
+        input {
+            box-sizing: border-box;
+            height: 3em;
+            width: 100%;
+            background: #f6f6f6;
+            padding: 11px 35px 11px 35px;
+        }
+    }
+    .pick-up {
+        position: relative;
+        i {
+            color: #c5c5c5;
+            font-size: 14px;
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .decor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 20px;
+        span {
+            display: inline-block;
+        }
+        span {
+            border-left: 1px solid black;
+            height: 40px;
+            width: 0;
+        }
+        .dot-round,
+        .dot-square {
+            border: 1px solid black;
+            height: 5px;
+            width: 5px;
+        }
+        .dot-round {
+            border-radius: 50%;
+        }
+    }
+}

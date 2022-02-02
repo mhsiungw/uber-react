@@ -1,0 +1,51 @@
+@use '../utilities/stylesheets/variables';
+
+.safety {
+    padding: variables.$padding;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.first-line-container {
+    .item {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.second-line-container {
+    padding-top: 40px;
+    .item {
+        img {
+            max-width: 5%;
+        }
+    }
+}
+
+.first-line-container,
+.second-line-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    .item {
+        letter-spacing: 0.6px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px 25px;
+        .title {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .contnet {
+            font-size: 16px;
+        }
+
+        .links {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 20px;
+        }
+    }
+}

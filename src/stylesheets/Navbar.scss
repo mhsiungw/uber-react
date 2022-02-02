@@ -1,0 +1,119 @@
+@use '../utilities/stylesheets/variables';
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    position: relative;
+    padding: variables.$nav-padding;
+    height: 70px;
+    li {
+        cursor: pointer;
+    }
+    .logo-list {
+        color: white;
+        display: flex;
+        align-items: center;
+        .logo-item {
+            font-size: 25px;
+            & ~ li {
+                display: none;
+            }
+        }
+    }
+    .info-list {
+        display: flex;
+        align-items: center;
+        color: white;
+        .language-item,
+        .products-item,
+        .log-in-item {
+            display: none;
+        }
+        .sign-up-item {
+            margin-left: 10px;
+            margin-right: 15px;
+            button {
+                border-radius: 16px;
+                padding: 10px 12px;
+                background: #fff;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        .toggle-item {
+            color: white;
+            label {
+                display: block;
+                width: 15px;
+            }
+            label::after,
+            label::before {
+                content: '';
+                display: inline-block;
+                width: 15px;
+                background: #fff;
+                height: 3px;
+            }
+            label::after {
+                position: relative;
+                bottom: 8px;
+            }
+            label::before {
+                position: relative;
+                top: 3px;
+            }
+            input {
+                display: none;
+                &:checked ~ .toggle-list {
+                    display: block;
+                }
+            }
+            .toggle-list {
+                display: none;
+                position: absolute;
+                top: 100%;
+                width: 100%;
+                left: 0;
+                padding-left: 20px;
+                li {
+                    color: black;
+                    margin-top: 15px;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1135px) {
+    .navbar {
+        .logo-list {
+            width: 500px;
+            justify-content: space-between;
+            .logo-item ~ li {
+                display: block;
+            }
+            .logo-item + li .icon {
+                height: 18px;
+                font-size: 18px;
+                align-self: center;
+            }
+        }
+        .info-list {
+            width: 400px;
+            justify-content: space-between;
+            .language-item,
+            .products-item,
+            .log-in-item {
+                display: block;
+            }
+            .icon-item,
+            .toggle-item {
+                display: none;
+            }
+        }
+    }
+}

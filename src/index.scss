@@ -1,0 +1,29 @@
+body {
+    font-family: UberMoveText, system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: block;
+}
+
+p,
+body,
+ul,
+div,
+h2,
+input,
+i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 500;
+}

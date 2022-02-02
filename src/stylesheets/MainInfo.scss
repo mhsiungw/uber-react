@@ -1,0 +1,54 @@
+.main-info {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    .title {
+        font-size: 44px;
+        font-weight: 500;
+    }
+    .content {
+        font-weight: 300;
+        white-space: nowrap;
+        width: 100%;
+        display: inline-block;
+    }
+    .actions {
+        display: flex;
+        align-items: center;
+        flex-flow: row wrap;
+        gap: 20px;
+        button {
+            margin-right: 20px;
+        }
+    }
+    .actions.ride {
+        flex-flow: column;
+        .link,
+        button {
+            width: 100%;
+            margin-right: unset;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .main-info {
+        .title {
+            font-size: 52px;
+        }
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .main-info {
+        .actions.ride {
+            flex-flow: row wrap;
+            .link,
+            button {
+                width: unset;
+                margin-right: 20px;
+            }
+        }
+    }
+}

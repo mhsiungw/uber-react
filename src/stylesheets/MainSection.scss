@@ -1,0 +1,32 @@
+@use '../utilities/stylesheets/variables';
+
+@media only screen and (min-width: 1200px) {
+    .main {
+        position: relative;
+        .tabs-info-container {
+            max-width: 530px;
+            position: absolute;
+            top: 50%;
+            left: variables.$main-section-left;
+            transform: translate(0, -50%);
+            background: #fff;
+            .main-tabs {
+                justify-content: space-between;
+                padding: 0 32px 0 32px;
+            }
+            .main-info {
+                padding: 44px;
+                .actions.drive,
+                .actions.eat {
+                    display: block;
+                    button {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        .main-background {
+            height: 600px;
+        }
+    }
+}

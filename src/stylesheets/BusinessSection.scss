@@ -1,0 +1,32 @@
+@use '../utilities/stylesheets/variables';
+
+.business-background {
+    background-image: url('../imgs/city.png');
+    height: 250px;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: right;
+    display: flex;
+    align-items: center;
+}
+
+.business {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-left: variables.$business-padding;
+    width: 100%;
+    .title {
+        font-size: 36px;
+        font-weight: 500;
+    }
+    .content {
+        font-weight: 300;
+        white-space: nowrap;
+        width: 100%;
+        display: inline-block;
+    }
+    button {
+        width: 105px;
+    }
+}
