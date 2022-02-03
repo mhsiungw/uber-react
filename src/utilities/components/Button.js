@@ -12,17 +12,22 @@ const styles = {
         border: 'none',
         fontWeight: '500',
         cursor: 'pointer',
-        ':hover': {
-            opacity: '0.8',
-        },
     },
     dark: {
-        background: '#000000',
+        backgroundColor: '#000000',
         color: '#fff',
+        transition: 'background-color 0.3s ease-out',
+        ':hover': {
+            backgroundColor: 'rgba(0, 0, 0, 0.81)',
+        },
     },
     light: {
-        background: '#EEEEEE',
+        backgroundColor: '#EEEEEE',
         color: '#000000',
+        transition: 'background-color 0.3s ease-out',
+        ':hover': {
+            backgroundColor: 'rgba(0, 0, 0, 0.096)',
+        },
     },
 }
 

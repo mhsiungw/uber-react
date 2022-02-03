@@ -1,0 +1,126 @@
+@use '../../utilities/stylesheets/variables';
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    padding: variables.$nav-padding;
+    height: 70px;
+    .logo-list {
+        color: white;
+        display: flex;
+        align-items: center;
+        li {
+            cursor: pointer;
+        }
+        .logo-item {
+            font-size: 25px;
+            & ~ li {
+                display: none;
+            }
+        }
+    }
+    .info-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        gap: 10px;
+        li {
+            cursor: pointer;
+        }
+        .language-item,
+        .products-item,
+        .log-in-item {
+            display: none;
+        }
+        .sign-up-item {
+            button {
+                border-radius: 16px;
+                padding: 10px 12px;
+                background: #fff;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        .toggle-navbar-button {
+            .show-button,
+            .cancel-button {
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: none;
+                border: none;
+                border-radius: 100%;
+                width: 35px;
+                height: 35px;
+                color: #fff;
+                &.display-none {
+                    display: none;
+                }
+                &:hover {
+                    background: rgba(146, 146, 146, 0.486);
+                }
+            }
+            .show-button {
+                input {
+                    display: none;
+                }
+                /* the two lines */
+                label {
+                    cursor: pointer;
+                    display: block;
+                    width: 15px;
+                    &::after,
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        width: 15px;
+                        background: #fff;
+                        height: 3px;
+                    }
+                    &::after {
+                        position: relative;
+                        bottom: 13px;
+                    }
+                    &::before {
+                        position: relative;
+                        top: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1135px) {
+    .navbar {
+        .logo-list {
+            width: 500px;
+            justify-content: space-between;
+            .logo-item ~ li {
+                display: block;
+            }
+            .logo-item + li .icon {
+                height: 18px;
+                font-size: 18px;
+                align-self: center;
+            }
+        }
+        .info-list {
+            width: 400px;
+            justify-content: space-between;
+            .language-item,
+            .products-item,
+            .log-in-item {
+                display: block;
+            }
+            .icon-item,
+            .toggle-navbar-button {
+                display: none;
+            }
+        }
+    }
+}

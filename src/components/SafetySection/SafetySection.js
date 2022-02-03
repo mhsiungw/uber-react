@@ -1,6 +1,6 @@
 import React from 'react'
 import SafetyItem from './SafetyItem'
-import '../../stylesheets/SafetySection.scss'
+import '../../stylesheets/SafetySection/SafetySection.scss'
 
 const info = [
     {

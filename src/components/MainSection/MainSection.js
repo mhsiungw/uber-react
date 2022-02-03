@@ -3,7 +3,7 @@ import Radium from 'radium'
 import MainTabs from './MainTabs'
 import MainInfo from './MainInfo'
 import MainBackground from './MainBackground'
-import '../../stylesheets/MainSection.scss'
+import '../../stylesheets/MainSection/MainSection.scss'
 
 class Main extends React.Component {
     state = {

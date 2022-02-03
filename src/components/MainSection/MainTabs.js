@@ -2,7 +2,8 @@ import React from 'react'
 import { ReactComponent as EarnFilledSvg } from '../../imgs/Earn-filled.svg'
 import { ReactComponent as RestaurantOutlined } from '../../imgs/restaurant-outlined.svg'
 import { ReactComponent as CarFrontOutlined } from '../../imgs/car-front-outlined.svg'
-import '../../stylesheets/MainTabs.scss'
+
+import '../../stylesheets/MainSection/MainTabs.scss'
 
 const MainTabs = (props) => {
     const { clickedItem } = props

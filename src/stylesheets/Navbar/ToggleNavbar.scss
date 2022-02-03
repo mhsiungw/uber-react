@@ -1,0 +1,80 @@
+@use '../../utilities/stylesheets/variables';
+
+/* transiction effet */
+.toggle-navbar {
+    position: absolute;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: transform 0.3s ease-out;
+    transform-origin: top;
+    transform: scale(1, 0);
+}
+
+.toggle-navbar.show {
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: transform 0.3s ease-out;
+}
+
+/* transiction effet */
+
+.toggle-navbar {
+    height: 100vh;
+    padding: variables.$padding;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    .contents {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        & > p {
+            display: flex;
+            justify-content: space-between;
+        }
+        p {
+            cursor: pointer;
+            font-size: 32px;
+            font-weight: 500;
+        }
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        button {
+            cursor: pointer;
+        }
+        .product-button {
+            padding: 12px 25px;
+            font-family: 'UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif';
+            border: none;
+            color: #000000;
+            background-color: rgba(238, 238, 238, 1);
+            transition: background-color 0.3s ease-out;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.096);
+            }
+            span {
+                font-weight: 500;
+                font-size: 16px;
+            }
+            i {
+                margin-right: 8px;
+            }
+        }
+        .language-button {
+            background-color: #fff;
+            margin-right: auto;
+            padding: 6px 6px;
+            border-radius: 12px;
+            &:hover {
+                background-color: rgba(109, 109, 109, 0.075);
+            }
+            i {
+                margin-right: 12px;
+            }
+        }
+    }
+}

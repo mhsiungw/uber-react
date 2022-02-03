@@ -2,7 +2,7 @@ import React from 'react'
 import UnderLinedText from '../../utilities/components/UnderlinedText'
 import Button from '../../utilities/components/Button'
 import Form from '../../utilities/components/Form'
-import '../../stylesheets/MainInfo.scss'
+import '../../stylesheets/MainSection/MainInfo.scss'
 
 const MainInfo = (props) => {
     const { clickedItem, info } = props

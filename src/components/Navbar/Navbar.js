@@ -1,15 +1,16 @@
 import React from 'react'
 
-import '../stylesheets/Navbar.scss'
+import '../../stylesheets/Navbar/Navbar.scss'
 
-const Navbar = () => {
+const Navbar = (props) => {
+    const { handleToggleNavbar, isToggleNavbarShow } = props
     return (
         <div className="navbar">
             <ul className="logo-list">
                 <li className="logo-item">Uber</li>
                 <li>
                     <span>Company</span>
-                    <i className="angle down icon"></i>
+                    <i className="angle down icon" />
                 </li>
                 <li>Safety</li>
                 <li>Help</li>
@@ -34,15 +35,20 @@ const Navbar = () => {
                 <li className="sign-up-item">
                     <button>Sign up</button>
                 </li>
-                <li className="toggle-item">
-                    <label htmlFor="toggle-navbar" />
-                    <input id="toggle-navbar" type="checkbox" />
-                    <ul className="toggle-list">
-                        <li>Compnay</li>
-                        <li>Safety</li>
-                        <li>Help</li>
-                        <li>COVID-19 resources</li>
-                    </ul>
+                <li className="toggle-navbar-button">
+                    <button
+                        onClick={() => handleToggleNavbar(true)}
+                        className={`show-button ${isToggleNavbarShow ? 'display-none' : ''}`}
+                    >
+                        <label htmlFor="toggle-navbar" />
+                        <input id="toggle-navbar" type="checkbox" />
+                    </button>
+                    <button
+                        onClick={() => handleToggleNavbar(false)}
+                        className={`cancel-button ${isToggleNavbarShow ? '' : 'display-none'}`}
+                    >
+                        &#10005;
+                    </button>
                 </li>
             </ul>
         </div>

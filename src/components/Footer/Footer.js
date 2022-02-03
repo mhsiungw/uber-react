@@ -3,7 +3,7 @@ import FooterTop from './FooterTop'
 import FooterMiddle from './FooterMiddle'
 import FooterBottom from './FooterBottem'
 
-import '../../stylesheets/Footer.scss'
+import '../../stylesheets/Footer/Footer.scss'
 
 const info = [
     {
