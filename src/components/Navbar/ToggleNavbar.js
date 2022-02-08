@@ -28,7 +28,7 @@ const ToggleNavbar = (props) => {
         <div className={`toggle-navbar ${props.isToggleNavbarShow ? 'show' : ''}`}>
             <div className="contents">
                 <p>
-                    <span>Compnay</span>
+                    <span>Company</span>
                     <i className="angle down icon" />
                 </p>
                 <p>Safety</p>
