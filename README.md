@@ -4,13 +4,17 @@
 
 A static website built through React.js and the styles are based on [Uber](https://www.uber.com/tw/en/)
 
+<br />
+
 ## Component Structure
 
 ![component structure](./src/imgs/component-structure.jpg)
 
 <br />
 
-## [Demo website](https://angry-golick-4e759a.netlify.app)
+## Demo website
+
+https://angry-golick-4e759a.netlify.app
 
 <br />
 
